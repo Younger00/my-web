@@ -173,11 +173,8 @@ showPhoto(currentPhoto);
 showPhoto(currentPhoto);
 // Next button
 document.getElementById("nextBtn")
-.addEventListener(
-"click",
-function () {
-currentPhoto =
-(currentPhoto + 1)
+.addEventListener("click", function () {
+currentPhoto =(currentPhoto + 1)
 % photos.length;
 showPhoto(currentPhoto);
 }
