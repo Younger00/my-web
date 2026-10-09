@@ -1,0 +1,366 @@
+Html <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description"
+content="Interactive personal student portfolio">
+<title>Younger | Student Portfolio</title>
+<!-- External CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- External JavaScript -->
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="#home" class="logo">Younger</a>
+<button id="menuBtn"
+class="menu-btn"
+type="button"
+aria-expanded="false">
+☰ Menu
+</button>
+<ul id="navLinks" class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#learning">Learning Plan</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#photos">Photos</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+🌙
+<button id="themeBtn"
+class="theme-btn"
+type="button">
+ Dark Mode
+</button>
+</nav>
+</header>
+<main>
+<!-- HOME -->
+<section id="home" class="hero">
+<div>
+<p class="tag">ICT251 Web Technologies</p>
+<h1>Hello, I'm Younger</h1>
+<p class="hero-text">
+I am a Computer Science student interested in
+programming, web development and computer 
+vision.
+This website presents my learning journey,
+projects, hobbies and skills.
+</p>
+<a href="#projects" class="button">
+View My Projects
+</a>
+</div>
+</section>
+<!-- ABOUT ME -->
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>
+I am a Computer Science student who enjoys 
+learning
+how technology can solve real-world problems. 
+My
+studies have introduced me to programming, 
+web
+development, databases and computer systems. 
+I enjoy
+improving my practical skills by creating small
+projects and experimenting with new ideas through the help of AI. My 
+goal is
+to become a confident software developer and 
+use
+technology to create useful solutions for people 
+and
+organisations.
+Adove all enjoying what i do while am in school is the most
+execting thing to do and i will keep on learning and improving my skills.
+</p>
+</section>
+<!-- HOBBIES -->
+<section id="hobbies" class="section">
+<h2>My Hobbies</h2>
+<div class="cards">
+<article class="card">
+<h3>
+💻
+ Programming</h3>
+<p>
+I enjoy practising programming and building
+small applications.
+</p>
+</article>
+<article class="card">
+<h3>
+ Technology</h3>
+🎮
+<p>
+I like exploring computers, software and
+new technologies.
+</p>
+</article>
+<article class="card">
+<h3>
+⚽
+ Sports</h3>
+<p>
+I enjoy sports and activities that keep me
+active and focused.
+</p>
+</article>
+</div>
+</section>
+<!-- LEARNING PLAN -->
+<section id="learning" class="section">
+<h2>My Learning Plan</h2>
+<ol>
+<li>
+Strengthen my programming and problem
+solving skills.
+</li>
+<li>
+Build responsive and interactive websites.
+</li>
+<li>
+Develop practical Computer Science projects.
+</li>
+</ol>
+<h3>Weekly Learning Plan</h3>
+<div class="table-wrap">
+<table>
+<caption>
+My current learning activities
+</caption>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Focus</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>Object-Oriented Programming</td>
+<td>Practise coding</td>
+</tr>
+<tr>
+<td>Web Development</td>
+<td>HTML, CSS and JavaScript</td>
+<td>Build websites</td>
+</tr>
+<tr>
+<td>Computer Vision</td>
+<td>Detection and Recognition</td>
+<td>Build practical projects</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<h2>Projects & Skills</h2>
+<label for="projectSearch">
+Search projects or skills:
+</label>
+<input id="projectSearch"
+type="search"
+placeholder="Try Java, website, vision...">
+<button id="resetSearch"
+class="small-btn"
+type="button">
+Reset
+</button>
+<p id="searchMessage"
+class="feedback">
+</p>
+<div class="cards">
+<!-- PROJECT 1 -->
+<article class="card project-card"
+data-search="java programming oop">
+<h3>Java Programming</h3>
+<p>
+Practising classes, objects, constructors,
+loops and methods.
+</p>
+<button class="details-btn"
+type="button"
+aria-expanded="false">
+Show Details
+</button>
+<div class="project-details" hidden>
+<p>
+I am learning how Java programs are
+structured and how Object-Oriented
+Programming is used.
+</p>
+</div>
+</article>
+<!-- PROJECT 2 -->
+<article class="card project-card"
+data-search="web html css javascript website">
+<h3>Interactive Website</h3>
+<p>
+Building responsive websites using HTML,
+CSS and JavaScript.
+</p>
+<button class="details-btn"
+type="button"
+aria-expanded="false">
+Show Details
+</button>
+<div class="project-details" hidden>
+<p>
+This portfolio demonstrates semantic
+HTML, responsive CSS and JavaScript.
+</p>
+</div>
+</article>
+<!-- PROJECT 3 -->
+<article class="card project-card"
+data-search="computer vision deep learning 
+recognition tracking">
+<h3>Computer Vision</h3>
+<p>
+Exploring detection, recognition, tracking
+and speed measurement.
+</p>
+<button class="details-btn"
+type="button"
+aria-expanded="false">
+Show Details
+</button>
+<div class="project-details" hidden>
+<p>
+This project explores how computer vision
+can analyse images and video.
+</p>
+</div>
+</article>
+</div>
+</section>
+<!-- PHOTOS -->
+<section id="photos" class="section">
+<h2>My Photos</h2>
+<div class="gallery">
+<figure>
+    <img id="galleryImage" 
+src="images/jsk.jpgs"
+    <figcaption id="galleryCaption">My first portfolio photo</figcaption>
+</figure>
+<div class="gallery-controls">
+<button id="prevBtn"
+class="button"
+type="button">
+Previous
+</button>
+<button id="nextBtn"
+class="button"
+type="button">
+Next
+</button>
+</div>
+</div>
+</section>
+<!-- VIDEO AND AUDIO -->
+<section id="media" class="section">
+<h2>My Media</h2>
+<h3>My Video</h3>
+<video width="700" height="400" class="responsive-media"
+controls>
+<source src="videos/video.mp4" type="video/mp4"/>
+Your user does not support the video tag.
+</video>
+<p>
+Video summary: This video introduces me or
+demonstrates one of my projects.
+</p>
+<h3>My Audio</h3>
+<audio controls>
+<source src="Audio/audio.mp3" type="audio/mpeg"/>
+</audio>
+<p>
+Audio summary: One of my favorite songs to remember that it to give it a little time.
+</p>
+continue cause i know it feels like.
+</audio>
+<p>
+sorry the audio did not contain the things am doing but it is a good song to listen.
+</p>
+</section>
+<!-- CONTACT FORM -->
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<form id="contactForm"
+novalidate>
+<div class="form-group">
+<label for="name">
+Name
+</label>
+<input id="name"
+name="name"
+type="text"
+required>
+<small id="nameError"
+class="error">
+</small>
+</div>
+<div class="form-group">
+<label for="email">
+Email
+</label>
+<input id="email"
+name="email"
+type="email"
+required>
+<small id="emailError"
+class="error">
+</small>
+</div>
+<div class="form-group">
+<label for="message">
+Message
+</label>
+<textarea id="message"
+name="message"
+rows="5"
+required>
+</textarea>
+<small id="messageError"
+class="error">
+</small>
+</div>
+<button class="button"
+type="submit">
+Validate & Preview
+</button>
+</form>
+<div id="formPreview"
+class="preview">
+</div>
+<p class="note">
+Browser demonstration only — no message is 
+sent.
+</p>
+</section>
+</main>
+<footer>
+<p>
+© 2026 Younger | ICT251 Web Technologies
+</p>
+<!-- Replace this with your actual GitHub 
+repository -->
+<a href="https://github.com
+/"
+target="_blank">
+View Source on GitHub
+</a>
+</footer>
+</body>
+</html>

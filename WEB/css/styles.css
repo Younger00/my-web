@@ -1,0 +1,356 @@
+*{
+box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6
+;
+background: #f4f7fb;
+color: #172033;
+}
+/* ---------- NAVIGATION ---------- */
+header {
+background: #172a46;
+color: white;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.navbar {
+max-width: 1200px;
+box-shadow: 0 2px rgba(0, 0, 0, 0.05);
+margin: auto;
+padding: 12px 20px;
+display: flex;
+align-items: center;
+gap: 18px;
+}
+.nav-container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+}
+.logo {
+color: white;
+text-decoration: none;
+font-size: 1.4
+rem;
+font-weight: bold;
+}
+.nav-links {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 0;
+padding: 0;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+padding: 8px;
+border-radius: 6px;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+background: #31577f;
+outline: 2px solid white;
+}
+/* ---------- BUTTONS ---------- */
+.button,
+.small-btn,
+.details-btn,
+.theme-btn,
+.menu-btn {
+border: none;
+border-radius: 7px;
+padding: 10px 15px;
+cursor: pointer;
+font-weight: bold;
+}
+.button {
+display: inline-block;
+background: #1e5a96;
+color: white;
+text-decoration: none;
+}
+.button:hover,
+.button:focus,
+.small-btn:hover,
+.small-btn:focus,
+.details-btn:hover,
+.details-btn:focus,
+.theme-btn:hover,
+.theme-btn:focus,
+.menu-btn:hover,
+.menu-btn:focus {
+opacity: 0.85;
+outline: 3px solid #8cc8ff;
+}
+/* ---------- MOBILE MENU BUTTON ---------- */
+.menu-btn {
+display: none;
+}
+/* ---------- THEME BUTTON ---------- */
+.theme-btn {
+margin-left: auto;
+}
+/* ---------- HERO SECTION ---------- */
+.hero {
+min-height: 65vh;
+display: grid;
+place-items: center;
+text-align: center;
+padding: 60px 20px;
+background: linear-gradient(
+135deg,
+#dcecff,
+#ffffff
+);
+}
+.hero > div {
+max-width: 800px;
+}
+.tag {
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+h1 {
+font-size: clamp(2.2rem, 6vw, 4rem);
+margin: 10px 0;
+}
+.hero-text {
+font-size: 1.1
+rem;
+}
+/* ---------- GENERAL SECTIONS ---------- */
+.section {
+font-family: Arial, Helvetica, sans-serif;
+max-width: 1050px;
+margin: 0 auto;
+padding: 65px 20px;
+color: #172033;
+}
+h2 {
+font-size: 2rem;
+margin-top: 0;
+}
+/* ---------- CARDS ---------- */
+.cards {
+display: grid;
+grid-template-columns:
+repeat(3, 1
+fr);
+gap: 20px;
+}
+.card {
+background: white;
+border: 1px solid #d7dee8;
+border-radius: 12px;
+padding: 22px;
+box-shadow:
+0 5px 18px rgba(0, 0, 0, 0.07);
+}
+/* ---------- LEARNING PLAN ---------- */
+.learning-list {
+padding-left: 25px;
+}
+/* ---------- TABLE ---------- */
+.table-wrap {
+overflow-x: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background: white;
+}
+caption {
+font-weight: bold;
+padding: 10px;
+}
+th,
+td {
+border: 1px solid #aeb8c5;
+padding: 12px;
+text-align: left;
+}
+th {
+background: #172a46;
+color: white;
+}
+/* ---------- FORM ---------- */
+label {
+display: block;
+font-weight: bold;
+margin-top: 15px;
+}
+input,
+textarea {
+width: 100%;
+padding: 12px;
+margin: 6px 0;
+border: 1px solid #9da9b8;
+border-radius: 7px;
+font: inherit;
+}
+input:focus,
+textarea:focus {
+outline: 3px solid #8cc8ff;
+}
+.error {
+display: block;
+min-height: 20px;
+color: #b00020;
+}
+.feedback {
+min-height: 25px;
+font-weight: bold;
+}
+.preview {
+margin-top: 20px;
+padding: 15px;
+border-radius: 8px;
+background: #e7f5e9;
+}
+/* ---------- GALLERY ---------- */
+.gallery {
+max-width: 650px;
+margin: auto;
+text-align: center;
+}
+.gallery img {
+width: 100%;
+max-height: 450px;
+object-fit: cover;
+border-radius: 12px;
+}
+.gallery-controls {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 15px;
+}
+/* ---------- VIDEO ---------- */
+.responsive-media {
+width: 100%;
+max-width: 400px;
+height: 500px;
+object-fit: cover;
+border-radius: 8px;
+display: block;
+margin: 10px auto;
+}
+/* ---------- AUDIO ---------- */
+audio {
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
+}
+/* ---------- INFORMATION TEXT ---------- */
+.note {
+font-size: 0.9rem;
+opacity: 0.8;
+}
+/* ---------- FOOTER ---------- */
+footer {
+text-align: center;
+padding: 30px 20px;
+background: #172a46;
+color: white;
+}
+footer a {
+color: white;
+}
+/* ==================================
+DARK MODE
+================================== */
+.dark-mode {
+background: #101820;
+color: #eef4fa;
+}
+.dark-mode .card,
+.dark-mode table,
+.dark-mode input,
+.dark-mode textarea {
+background: #1c2833;
+color: #eef4fa;
+border-color: #526476;
+}
+.dark-mode .hero {
+background: linear-gradient(
+135deg,
+#182a3b,
+#101820
+);
+}
+.dark-mode th {
+background: #263d55;
+}
+.dark-mode .preview {
+background: #1d4930;
+}
+/* ==================================
+RESPONSIVE DESIGN
+================================== */
+/* ---------- TABLET ---------- */
+@media (max-width: 800px) {
+.navbar {
+flex-wrap: wrap;
+}
+/* Show mobile menu button */
+.menu-btn {
+display: block;
+margin-left: auto;
+}
+.theme-btn {
+margin-left: 0;
+}
+/* Hide navigation until opened */
+.nav-links {
+display: none;
+width: 100%;
+flex-direction: column;
+}
+/* JavaScript adds this class */
+.nav-links.open {
+display: flex;
+}
+/* Make cards one column */
+.cards {
+grid-template-columns: 1fr;
+}
+}
+/* ---------- PHONE ---------- */
+@media (max-width: 500px) {
+.navbar {
+padding: 10px;
+}
+.section {
+padding: 45px 15px;
+}
+.hero {
+min-height: 55vh;
+padding: 40px 15px;
+}
+/* Make buttons easier to use */
+.button,
+.small-btn,
+.details-btn,
+.theme-btn,
+.menu-btn {
+width: 100%;
+}
+.gallery-controls {
+flex-direction: column;
+}
+}
